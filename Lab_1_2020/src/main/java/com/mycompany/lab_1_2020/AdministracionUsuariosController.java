@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -42,6 +43,18 @@ public class AdministracionUsuariosController implements Initializable {
     private Button btnLimpiar;
     @FXML
     private Button btnGuardar;
+    @FXML
+    private TextField textfConsultaInformacion;
+    @FXML
+    private TextField textfBusquedaAutorizaciones;
+    @FXML
+    private TextField textfBusquedaAutorizaciones1;
+    @FXML
+    private Button btnBuscarAutorizaciones1;
+    @FXML
+    private Button btnBuscarAutorizaciones11;
+    @FXML
+    private Button btnBuscarAutorizaciones12;
 
     /**
      * Initializes the controller class.
