@@ -1,11 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lab_1_2020.AdministracionPermisosController">
-    
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="com.mycompany.lab_1_2020.AdministracionPermisosController">
+   <children>
+      <Label layoutX="27.0" layoutY="28.0" text="Informacion de permisos">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="27.0" layoutY="86.0" prefHeight="466.0" prefWidth="691.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Informacion">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="23.0" layoutY="118.0" prefHeight="200.0" prefWidth="647.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Id" />
+                            <TableColumn prefWidth="75.0" text="Código" />
+                          </columns>
+                        </TableView>
+                        <TextField layoutX="23.0" layoutY="37.0" prefHeight="26.0" prefWidth="514.0" promptText="Consultar por id, nombre y estado">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </TextField>
+                        <Button layoutX="553.0" layoutY="38.0" mnemonicParsing="false" text="Buscar I Borrar">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                        <Button layoutX="30.0" layoutY="390.0" mnemonicParsing="false" text="Cerrar">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                        <Button layoutX="619.0" layoutY="390.0" mnemonicParsing="false" text="Agregar">
+                           <effect>
+                              <InnerShadow />
+                           </effect>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
 </AnchorPane>
