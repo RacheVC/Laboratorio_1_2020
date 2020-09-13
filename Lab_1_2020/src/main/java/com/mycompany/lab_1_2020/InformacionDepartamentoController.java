@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.lab_1_2020.controllers;
+package com.mycompany.lab_1_2020;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author rache
  */
-public class InformacionTiposTramitesController implements Initializable {
+public class InformacionDepartamentoController implements Initializable {
 
     /**
      * Initializes the controller class.
