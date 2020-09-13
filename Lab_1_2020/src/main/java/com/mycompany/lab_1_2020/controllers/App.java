@@ -1,4 +1,4 @@
-package com.mycompany.lab_1_2020;
+package com.mycompany.lab_1_2020.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
