@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import org.una.laboratorio1.App;
 
 /**
  * FXML Controller class
@@ -41,8 +42,9 @@ public class LoginController implements Initializable {
 
     @FXML
     private void Ingresar(ActionEvent event) throws IOException {
-        Parent gui = FXMLLoader.load(getClass().getResource("src/main/resources/org.una.laboratorio1/Dashboard.fxml"));
-        Scene creacionDocs = new Scene(gui);
+         Parent root = FXMLLoader.load(App.class
+                .getResource("Dashboard.fxml"));
+        Scene creacionDocs = new Scene(root);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(creacionDocs);
