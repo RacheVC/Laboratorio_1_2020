@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.InformacionTiposTramitesController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionTiposTramitesController">
    <children>
       <Label layoutX="63.0" layoutY="42.0" text="Tipos de tramites:">
          <font>
@@ -43,7 +42,7 @@
             <TableColumn prefWidth="90.0" text="Acciones" />
          </columns>
       </TableView>
-      <Button layoutX="66.0" layoutY="487.0" mnemonicParsing="false" text="Cancelar">
+      <Button layoutX="66.0" layoutY="487.0" mnemonicParsing="false" onAction="#actionBtnCancelar" text="Cancelar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -61,4 +60,3 @@
       </Button>
    </children>
 </AnchorPane>
-

@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoRequisitosController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoRequisitosController">
    <children>
       <Label layoutX="55.0" layoutY="37.0" text="Información de requisitos:">
          <font>
@@ -32,17 +31,17 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="223.0" layoutY="91.0" prefHeight="25.0" prefWidth="285.0">
+      <TextField fx:id="txt_id" layoutX="223.0" layoutY="91.0" prefHeight="25.0" prefWidth="285.0">
          <effect>
             <InnerShadow />
          </effect>
       </TextField>
-      <TextField layoutX="223.0" layoutY="132.0" prefHeight="25.0" prefWidth="285.0">
+      <TextField fx:id="txtDescripcion" layoutX="223.0" layoutY="132.0" prefHeight="25.0" prefWidth="285.0">
          <effect>
             <InnerShadow />
          </effect>
       </TextField>
-      <ComboBox layoutX="223.0" layoutY="176.0" prefWidth="150.0">
+      <ComboBox fx:id="cbxEstado" layoutX="223.0" layoutY="176.0" prefWidth="150.0">
          <effect>
             <InnerShadow />
          </effect>
@@ -52,12 +51,12 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <DatePicker layoutX="222.0" layoutY="222.0">
+      <DatePicker fx:id="DateFechaCeacion" layoutX="222.0" layoutY="222.0">
          <effect>
             <InnerShadow />
          </effect>
       </DatePicker>
-      <Button layoutX="50.0" layoutY="339.0" mnemonicParsing="false" text="Cancelar">
+      <Button layoutX="50.0" layoutY="339.0" mnemonicParsing="false" onAction="#actionBtnCancelar" text="Cancelar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -65,7 +64,7 @@
             <InnerShadow />
          </effect>
       </Button>
-      <Button layoutX="430.0" layoutY="339.0" mnemonicParsing="false" text="Guardar">
+      <Button layoutX="430.0" layoutY="339.0" mnemonicParsing="false" onAction="#actionBtnGuardar" text="Guardar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -78,7 +77,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <ComboBox layoutX="222.0" layoutY="271.0" prefWidth="150.0">
+      <ComboBox fx:id="cbxVariaciones_id" layoutX="222.0" layoutY="271.0" prefWidth="150.0">
          <effect>
             <InnerShadow />
          </effect>

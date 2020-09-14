@@ -42,8 +42,7 @@ public class LoginController implements Initializable {
 
     @FXML
     private void Ingresar(ActionEvent event) throws IOException {
-         Parent root = FXMLLoader.load(App.class
-                .getResource("Dashboard.fxml"));
+        Parent root = FXMLLoader.load(App.class.getResource("Dashboard.fxml"));
         Scene creacionDocs = new Scene(root);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();

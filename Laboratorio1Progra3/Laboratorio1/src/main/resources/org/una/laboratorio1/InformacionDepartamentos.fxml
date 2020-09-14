@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.InformacionDepartamentosController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionDepartamentosController">
    <children>
       <Label layoutX="60.0" layoutY="42.0" text="Información de departamentos">
          <font>
@@ -38,16 +37,15 @@
             <TableColumn prefWidth="172.0" text="Operaciones" />
         </columns>
       </TableView>
-      <Button layoutX="58.0" layoutY="529.0" mnemonicParsing="false" text="Cerrar">
+      <Button layoutX="58.0" layoutY="529.0" mnemonicParsing="false" onAction="#ActionBtnCerrar" text="Cerrar">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="615.0" layoutY="529.0" mnemonicParsing="false" text="Agregar">
+      <Button layoutX="615.0" layoutY="529.0" mnemonicParsing="false" onAction="#ActionBtnAgregar" text="Agregar">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
    </children>
 </AnchorPane>
-

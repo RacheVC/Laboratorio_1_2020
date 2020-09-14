@@ -7,7 +7,12 @@ package org.una.laboratorio1.Controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TextField;
 
 /**
  * FXML Controller class
@@ -16,6 +21,17 @@ import javafx.fxml.Initializable;
  */
 public class DetalleInfoTiposTramitesController implements Initializable {
 
+    @FXML
+    private TextField txt_id;
+    @FXML
+    private DatePicker dateFechaCreacion;
+    @FXML
+    private TextField txtDescripcion;
+    @FXML
+    private ComboBox<?> txtFechaModificacion;
+    @FXML
+    private ComboBox<?> txtDepartamentoId;
+
     /**
      * Initializes the controller class.
      */
@@ -23,5 +39,13 @@ public class DetalleInfoTiposTramitesController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
+
+    @FXML
+    private void actionBtnCancelar(ActionEvent event) {
+    }
+
+    @FXML
+    private void actionBtnGuardar(ActionEvent event) {
+    }
     
 }

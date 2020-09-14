@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoVariacionesController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoVariacionesController">
    <children>
       <Label layoutX="65.0" layoutY="93.0" text="Id:">
          <font>
@@ -27,17 +26,17 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="233.0" layoutY="94.0" prefHeight="25.0" prefWidth="285.0">
+      <TextField fx:id="txt_id" layoutX="233.0" layoutY="94.0" prefHeight="25.0" prefWidth="285.0">
          <effect>
             <InnerShadow />
          </effect>
       </TextField>
-      <TextField layoutX="233.0" layoutY="132.0" prefHeight="25.0" prefWidth="285.0">
+      <TextField fx:id="txtDescripcion" layoutX="233.0" layoutY="132.0" prefHeight="25.0" prefWidth="285.0">
          <effect>
             <InnerShadow />
          </effect>
       </TextField>
-      <ComboBox layoutX="233.0" layoutY="169.0" prefWidth="150.0">
+      <ComboBox fx:id="cbxEstado" layoutX="233.0" layoutY="169.0" prefWidth="150.0">
          <effect>
             <InnerShadow />
          </effect>
@@ -47,7 +46,7 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <DatePicker layoutX="232.0" layoutY="209.0">
+      <DatePicker fx:id="dateFechaCreacion" layoutX="232.0" layoutY="209.0">
          <effect>
             <InnerShadow />
          </effect>
@@ -62,22 +61,12 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <TextField layoutX="232.0" layoutY="249.0" prefHeight="25.0" prefWidth="285.0">
+      <TextField fx:id="txtGrupo" layoutX="232.0" layoutY="249.0" prefHeight="25.0" prefWidth="285.0">
          <effect>
             <InnerShadow />
          </effect>
       </TextField>
-      <Label layoutX="61.0" layoutY="288.0" text="Variaciones id:">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </Label>
-      <ComboBox layoutX="233.0" layoutY="289.0" prefWidth="150.0">
-         <effect>
-            <InnerShadow />
-         </effect>
-      </ComboBox>
-      <Button layoutX="60.0" layoutY="355.0" mnemonicParsing="false" text="Cancelar">
+      <Button layoutX="60.0" layoutY="355.0" mnemonicParsing="false" onAction="#actionBtnCancelar" text="Cancelar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -85,7 +74,7 @@
             <InnerShadow />
          </effect>
       </Button>
-      <Button layoutX="440.0" layoutY="353.0" mnemonicParsing="false" text="Guardar">
+      <Button layoutX="440.0" layoutY="353.0" mnemonicParsing="false" onAction="#actionBtnGuardar" text="Guardar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -95,4 +84,3 @@
       </Button>
    </children>
 </AnchorPane>
-
