@@ -7,4 +7,5 @@ module org.una.laboratorio {
     opens org.una.laboratorio1.Controllers to javafx.fxml;
     exports org.una.laboratorio1;
     exports org.una.laboratorio1.Controllers;
+    requires com.google.gson;
 }
