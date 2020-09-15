@@ -18,13 +18,12 @@ import org.una.laboratorio1.dto.UsuarioDTO;
  * @author andre
  */
 public class UsuarioService {
-    
 
     private final String urlstring = "http://localhost:8099/usuarios/";
     private final String urlstringLogin = "http://localhost:8099/usuarios/login";
     private final String urlstringNombre = "http://localhost:8099/usuarios/nombre/Usuario%20Admin";
+    private final String urlstringCedula = "http://localhost:8099/usuarios/cedula/cedula";
 
-    
     private UsuarioService() {
     }
 
@@ -56,5 +55,9 @@ public class UsuarioService {
     private static class UsuarioServiceHolder {
 
         private static final UsuarioService INSTANCE = new UsuarioService();
+    }
+
+    public List<UsuarioDTO> finByCedula(String Cedula) throws IOException {
+        return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula, Cedula);
     }
 }
