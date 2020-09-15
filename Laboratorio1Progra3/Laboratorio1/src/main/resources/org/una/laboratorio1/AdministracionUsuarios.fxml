@@ -37,11 +37,6 @@
                            </columns>
                         </TableView>
                         <TextField fx:id="txtBuscar" layoutX="32.0" layoutY="14.0" prefHeight="25.0" prefWidth="510.0" promptText="Buscar por cédula o nombre de usuario" />
-                        <Button layoutX="547.0" layoutY="12.0" mnemonicParsing="false" onAction="#OnActionBuscarBorrar" prefHeight="25.0" prefWidth="116.0" text="Borrar | Buscar">
-                           <font>
-                              <Font name="System Bold" size="13.0" />
-                           </font>
-                        </Button>
                         <Button layoutX="9.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnCerrar1" prefHeight="29.0" prefWidth="71.0" text="Cerrar">
                            <font>
                               <Font name="System Bold" size="13.0" />
@@ -52,6 +47,7 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Button>
+                        <Button layoutX="553.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnActionBuscar" text="Buscar" />
                      </children>
                   </AnchorPane>
                </content>
