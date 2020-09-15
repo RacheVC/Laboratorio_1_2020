@@ -63,8 +63,8 @@ public class AdministracionUsuariosController implements Initializable {
     @FXML
     private void OnActionBuscar(ActionEvent event) {
          UsuarioDTO cedula = new UsuarioDTO();
-         System.out.println(cedula);
         cedula.setCedula(txtBuscar.getText());
+         System.out.println(cedula);
     }
     
 }

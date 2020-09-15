@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
 
@@ -24,6 +25,9 @@ import org.una.laboratorio1.App;
  * @author andre
  */
 public class DashboardController implements Initializable {
+
+    @FXML
+    private Label lblNombreUsuario;
 
     /**
      * Initializes the controller class.
@@ -91,6 +95,17 @@ public class DashboardController implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(creacionDocs);
         window.show();
+    }
+
+    @FXML
+    private void OnActionCerrarSesion(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(App.class.getResource("Login.fxml"));
+        Scene creacionDocs = new Scene(root);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(creacionDocs);
+        window.show();
+        
     }
 
   

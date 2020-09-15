@@ -18,7 +18,7 @@
             <Font name="Century Gothic" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="70.0" layoutY="102.0" prefHeight="25.0" prefWidth="513.0" promptText="Renuncia derecho de cementerio">
+      <TextField fx:id="txtBuscarDerecho" layoutX="70.0" layoutY="102.0" prefHeight="25.0" prefWidth="513.0" promptText="Renuncia derecho de cementerio">
          <effect>
             <InnerShadow />
          </effect>
@@ -26,7 +26,7 @@
             <Font size="15.0" />
          </font>
       </TextField>
-      <Button layoutX="583.0" layoutY="102.0" mnemonicParsing="false" text="Buscar | Borrar">
+      <Button layoutX="589.0" layoutY="102.0" mnemonicParsing="false" onAction="#OnActionBuscarDisenoTramite" text="Buscar">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -105,5 +105,13 @@
           </Tab>
         </tabs>
       </TabPane>
+      <Button layoutX="656.0" layoutY="102.0" mnemonicParsing="false" text="Borrar">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Button>
    </children>
 </AnchorPane>

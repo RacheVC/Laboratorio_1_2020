@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
 
@@ -24,6 +25,9 @@ import org.una.laboratorio1.App;
  * @author andre
  */
 public class InformacionDiseñoTramitesController implements Initializable {
+
+    @FXML
+    private TextField txtBuscarDerecho;
 
     /**
      * Initializes the controller class.
@@ -62,6 +66,10 @@ public class InformacionDiseñoTramitesController implements Initializable {
 
     @FXML
     private void actionBtnGuardar(ActionEvent event) {
+    }
+
+    @FXML
+    private void OnActionBuscarDisenoTramite(ActionEvent event) {
     }
     
 }

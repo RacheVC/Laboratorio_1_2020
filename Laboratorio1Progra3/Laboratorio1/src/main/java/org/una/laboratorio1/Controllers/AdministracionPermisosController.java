@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
 
@@ -24,6 +25,9 @@ import org.una.laboratorio1.App;
  * @author andre
  */
 public class AdministracionPermisosController implements Initializable {
+
+    @FXML
+    private TextField txtBuscar;
 
     /**
      * Initializes the controller class.
@@ -40,6 +44,10 @@ public class AdministracionPermisosController implements Initializable {
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
         window.setScene(creacionDocs);
         window.show();
+    }
+
+    @FXML
+    private void OnActionBuscarPermiso(ActionEvent event) {
     }
     
 }

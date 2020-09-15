@@ -15,6 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
 
@@ -24,6 +26,13 @@ import org.una.laboratorio1.App;
  * @author andre
  */
 public class DetalleInfoDepartamentoController implements Initializable {
+
+    @FXML
+    private TextField txtId;
+    @FXML
+    private TextField txtNombre;
+    @FXML
+    private ComboBox<?> cbxEstado;
 
     /**
      * Initializes the controller class.

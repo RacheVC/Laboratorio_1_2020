@@ -16,7 +16,7 @@
             <Font name="Century Gothic" size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="62.0" layoutY="112.0" prefHeight="25.0" prefWidth="513.0">
+      <TextField fx:id="txtTramite" layoutX="62.0" layoutY="112.0" prefHeight="25.0" prefWidth="513.0">
          <effect>
             <InnerShadow />
          </effect>
@@ -24,7 +24,7 @@
             <Font size="15.0" />
          </font>
       </TextField>
-      <Button layoutX="575.0" layoutY="112.0" mnemonicParsing="false" text="Buscar | Borrar">
+      <Button layoutX="587.0" layoutY="112.0" mnemonicParsing="false" onAction="#OnActionBuscarTipotramite" text="Buscar">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
