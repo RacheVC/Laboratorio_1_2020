@@ -8,4 +8,5 @@ module org.una.laboratorio {
     exports org.una.laboratorio1;
     exports org.una.laboratorio1.Controllers;
     requires com.google.gson;
+    requires lombok;
 }
