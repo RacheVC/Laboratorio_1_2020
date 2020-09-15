@@ -43,11 +43,10 @@
                 <Font name="Century Gothic" size="24.0" />
             </font>
         </Label>
-        <PasswordField layoutX="175.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0">
+        <PasswordField fx:id="txtfPassword" layoutX="175.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0">
             <effect>
                 <InnerShadow />
             </effect>
         </PasswordField>
     </children>
 </AnchorPane>
-

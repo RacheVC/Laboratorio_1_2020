@@ -8,6 +8,8 @@ package org.una.service;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import org.una.laboratorio1.dto.AuthenticationRequest;
+import org.una.laboratorio1.dto.AuthenticationResponse;
 
 import org.una.laboratorio1.utils.ConnectionUtils;
 import org.una.laboratorio1.dto.UsuarioDTO;
@@ -18,6 +20,7 @@ import org.una.laboratorio1.dto.UsuarioDTO;
  */
 public class UsuarioService {
      private final String urlstring = "http://localhost:8099/usuarios/";
+     private final String urlstringLogin = "http://localhost:8099/usuarios/login";
   
   private UsuarioService() {
   }
@@ -26,9 +29,13 @@ public class UsuarioService {
     return ConnectionUtils.ListFromConnection(urlstring, UsuarioDTO.class);
   }
   
-  
   public void add(UsuarioDTO object) throws InterruptedException, ExecutionException, IOException {
     ConnectionUtils.ObjectToConnection(urlstring, object);
+  }
+  
+  public void Login(AuthenticationRequest object) throws InterruptedException, ExecutionException, IOException {
+      ConnectionUtils.ObjectToConnectionLogin(urlstringLogin, object);
+    
   }
   
   public static UsuarioService getInstance() {
