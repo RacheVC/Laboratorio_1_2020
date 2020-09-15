@@ -6,11 +6,6 @@
 package org.una.laboratorio1.dto;
 
 import java.util.Date;
-import java.util.Date;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 //import org.una.tramites.entities.Departamento;
 /**
  *
@@ -42,6 +37,7 @@ public class UsuarioDTO {
         this.departamentoId = departamentoId;
         this.esJefe = esJefe;
     }
+  
 
     public Long getId() {
         return id;
