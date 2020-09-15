@@ -11,15 +11,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
    <children>
       <Label layoutX="86.0" layoutY="42.0" text="Administración de usuarios">
          <font>
             <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <TabPane layoutX="37.0" layoutY="149.0" prefHeight="401.0" prefWidth="690.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="30.0" layoutY="150.0" prefHeight="401.0" prefWidth="690.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
             <Tab text="Información">
                <content>
@@ -37,8 +36,8 @@
                               <TableColumn prefWidth="124.0" text="Contraseña " />
                            </columns>
                         </TableView>
-                        <TextField layoutX="32.0" layoutY="14.0" prefHeight="25.0" prefWidth="510.0" promptText="Buscar por id, nombre de usuario o contraseña" />
-                        <Button layoutX="542.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Borrar | Buscar">
+                        <TextField fx:id="txtBuscar" layoutX="32.0" layoutY="14.0" prefHeight="25.0" prefWidth="510.0" promptText="Buscar por cédula o nombre de usuario" />
+                        <Button layoutX="547.0" layoutY="12.0" mnemonicParsing="false" onAction="#OnActionBuscarBorrar" prefHeight="25.0" prefWidth="116.0" text="Borrar | Buscar">
                            <font>
                               <Font name="System Bold" size="13.0" />
                            </font>

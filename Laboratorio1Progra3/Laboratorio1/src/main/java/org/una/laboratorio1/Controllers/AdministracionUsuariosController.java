@@ -15,8 +15,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
+import org.una.laboratorio1.dto.UsuarioDTO;
 
 /**
  * FXML Controller class
@@ -25,20 +27,25 @@ import org.una.laboratorio1.App;
  */
 public class AdministracionUsuariosController implements Initializable {
 
+    @FXML
+    private TextField txtBuscar;
+
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
+    }
 
     @FXML
     private void ActionBtnCerrar1(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(App.class.getResource("Dashboard.fxml"));
         Scene creacionDocs = new Scene(root);
 
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(creacionDocs);
         window.show();
     }
@@ -48,9 +55,15 @@ public class AdministracionUsuariosController implements Initializable {
         Parent root = FXMLLoader.load(App.class.getResource("Dashboard.fxml"));
         Scene creacionDocs = new Scene(root);
 
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(creacionDocs);
         window.show();
+    }
+
+    @FXML
+    private void OnActionBuscarBorrar(ActionEvent event) {
+        UsuarioDTO cedula = new UsuarioDTO();
+        cedula.setCedula(txtBuscar.getText());
     }
     
 }

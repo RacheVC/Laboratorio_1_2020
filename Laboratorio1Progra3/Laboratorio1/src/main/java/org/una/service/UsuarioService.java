@@ -22,7 +22,8 @@ public class UsuarioService {
     private final String urlstring = "http://localhost:8099/usuarios/";
     private final String urlstringLogin = "http://localhost:8099/usuarios/login";
     private final String urlstringNombre = "http://localhost:8099/usuarios/nombre/Usuario%20Admin";
-    private final String urlstringCedula = "http://localhost:8099/usuarios/cedula/cedula";
+    private final String urlstringCedula = "http://localhost:8099/usuarios/cedula/Cedula";
+    UsuarioDTO datos = new UsuarioDTO();
 
     private UsuarioService() {
     }
@@ -58,6 +59,7 @@ public class UsuarioService {
     }
 
     public List<UsuarioDTO> finByCedula(String Cedula) throws IOException {
+        Cedula = datos.getCedula();
         return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula, Cedula);
     }
 }
