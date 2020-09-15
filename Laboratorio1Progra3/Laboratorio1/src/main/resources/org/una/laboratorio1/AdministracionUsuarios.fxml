@@ -1,101 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.TextField?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
+
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
    <children>
-      <Label layoutX="27.0" layoutY="42.0" text="Administración de Usuarios">
+      <Label layoutX="86.0" layoutY="42.0" text="Administración de usuarios">
          <font>
-            <Font size="24.0" />
+            <Font name="System Bold" size="29.0" />
          </font>
       </Label>
-      <TabPane layoutX="27.0" layoutY="84.0" prefHeight="475.0" prefWidth="694.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="37.0" layoutY="149.0" prefHeight="401.0" prefWidth="690.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
-          <Tab text="Informacion">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Tab text="Información">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="textfConsultaInformacion" layoutX="26.0" layoutY="25.0" prefHeight="26.0" prefWidth="532.0" promptText="Consultar por id, nombre y estado">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </TextField>
-                        <Button fx:id="btnBuscarInformacion" layoutX="572.0" layoutY="25.0" mnemonicParsing="false" text="Buscar I Borrar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </Button>
-                        <TableView fx:id="tviewInformacion" layoutX="28.0" layoutY="69.0" prefHeight="200.0" prefWidth="638.0">
-                          <columns>
-                            <TableColumn prefWidth="211.99996948242188" text="Id" />
-                            <TableColumn prefWidth="211.99996948242188" text="Código" />
-                              <TableColumn prefWidth="211.99996948242188" text="Nombre" />
-                          </columns>
+                        <TableView layoutY="43.0" prefHeight="269.0" prefWidth="690.0">
+                           <columns>
+                              <TableColumn prefWidth="47.0" text="Id" />
+                              <TableColumn prefWidth="60.0" text="Cédula" />
+                              <TableColumn prefWidth="57.0" text="Es jefe" />
+                              <TableColumn prefWidth="73.0" text="Estado" />
+                              <TableColumn prefWidth="98.0" text="Fecha  registro" />
+                              <TableColumn prefWidth="117.0" text="Fecha modificacion" />
+                              <TableColumn prefWidth="113.0" text="Nombre " />
+                              <TableColumn prefWidth="124.0" text="Contraseña " />
+                           </columns>
                         </TableView>
-                        <Button layoutX="14.0" layoutY="406.0" mnemonicParsing="false" onAction="#ActionBtnCerrar" prefHeight="26.0" prefWidth="74.0" text="Cerrar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
+                        <TextField layoutX="32.0" layoutY="14.0" prefHeight="25.0" prefWidth="510.0" promptText="Buscar por id, nombre de usuario o contraseña" />
+                        <Button layoutX="542.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="116.0" text="Borrar | Buscar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
                         </Button>
-                        <Button fx:id="btnAgregar" layoutX="605.0" layoutY="406.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="74.0" text="Agregar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
+                        <Button layoutX="9.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnCerrar1" prefHeight="29.0" prefWidth="71.0" text="Cerrar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="605.0" layoutY="329.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Limpiar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
                         </Button>
                      </children>
                   </AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="Autorizaciones">
+               </content>
+            </Tab>
+          <Tab text="Autorización">
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextField fx:id="textfBusquedaAutorizaciones" layoutX="14.0" layoutY="25.0" prefHeight="26.0" prefWidth="570.0" promptText="Buscar por nombre o cédula">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </TextField>
-                        <Button fx:id="btnBuscarAutorizaciones" layoutX="588.0" layoutY="25.0" mnemonicParsing="false" text="Buscar I Borrar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
+                        <TextField layoutX="31.0" layoutY="14.0" prefHeight="25.0" prefWidth="529.0" promptText="Buscar por nombre de usuario o contraseña" />
+                        <Button layoutX="560.0" layoutY="12.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="71.0" text="Buscar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
                         </Button>
-                        <TableView fx:id="tviewAutorizaciones" layoutX="14.0" layoutY="122.0" prefHeight="200.0" prefWidth="666.0">
+                        <Button layoutX="107.0" layoutY="311.0" mnemonicParsing="false" onAction="#ActionBtnCerrar2" prefHeight="29.0" prefWidth="71.0" text="Cerrar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="32.0" layoutY="54.0" text="Usuario:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="82.0" text="Contraseña:">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="126.0" layoutY="54.0" prefHeight="20.0" prefWidth="168.0" text="Label">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <PasswordField layoutX="126.0" layoutY="80.0" prefHeight="25.0" prefWidth="168.0" />
+                        <Button layoutX="345.0" layoutY="78.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="145.0" text="Cambiar contraseña">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="494.0" layoutY="311.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="77.0" text="Guardar">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="107.0" layoutY="117.0" prefHeight="180.0" prefWidth="465.0">
                           <columns>
-                            <TableColumn prefWidth="167.99996185302734" text="[ ] " />
-                            <TableColumn prefWidth="167.99996185302734" text="Id" />
-                              <TableColumn minWidth="0.0" prefWidth="167.99996185302734" text="Codigo" />
-                              <TableColumn prefWidth="167.99996185302734" text="Nombre" />
+                            <TableColumn prefWidth="51.0" text="Id" />
+                            <TableColumn prefWidth="204.0" text="Nombre de usuario" />
+                              <TableColumn prefWidth="209.0" text="Contraseña" />
                           </columns>
                         </TableView>
-                        <Label layoutX="14.0" layoutY="60.0" text="Usuario: " />
-                        <Label layoutX="14.0" layoutY="78.0" text="Cédula:" />
-                        <Label fx:id="lblUsuario" layoutX="69.0" layoutY="60.0" text="Label" />
-                        <Label fx:id="lblCedula" layoutX="69.0" layoutY="78.0" text="Label" />
-                        <Button fx:id="btnCancelar" layoutX="13.0" layoutY="389.0" mnemonicParsing="false" text="Cancelar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </Button>
-                        <Button fx:id="btnLimpiar" layoutX="83.0" layoutY="389.0" mnemonicParsing="false" text="Limpiar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </Button>
-                        <Button fx:id="btnGuardar" layoutX="620.0" layoutY="389.0" mnemonicParsing="false" text="Guardar">
-                           <effect>
-                              <InnerShadow />
-                           </effect>
-                        </Button>
                      </children>
                   </AnchorPane>
             </content>

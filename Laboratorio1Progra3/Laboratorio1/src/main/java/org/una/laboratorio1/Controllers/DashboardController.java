@@ -44,16 +44,6 @@ public class DashboardController implements Initializable {
     }
 
     @FXML
-    private void actionBtnUsuarios(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(App.class.getResource("AdministracionUsuarios.fxml"));
-        Scene creacionDocs = new Scene(root);
-
-        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
-        window.setScene(creacionDocs);
-        window.show();
-    }
-
-    @FXML
     private void actionBtnParametros(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(App.class.getResource("AdministracionParametros.fxml"));
         Scene creacionDocs = new Scene(root);
@@ -92,4 +82,16 @@ public class DashboardController implements Initializable {
         window.setScene(creacionDocs);
         window.show();
     }  
+
+    @FXML
+    private void actionBtnUsuarios(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(App.class.getResource("AdministracionPermisos.fxml"));
+        Scene creacionDocs = new Scene(root);
+
+        Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+        window.setScene(creacionDocs);
+        window.show();
+    }
+
+  
 }
