@@ -18,11 +18,13 @@ import org.una.laboratorio1.dto.UsuarioDTO;
  * @author andre
  */
 public class UsuarioService {
+    
 
     private final String urlstring = "http://localhost:8099/usuarios/";
     private final String urlstringLogin = "http://localhost:8099/usuarios/login";
-    private final String urlstringNombre = "http://localhost:8099/usuarios/nombre/{term}/";
+    private final String urlstringNombre = "http://localhost:8099/usuarios/nombre/Usuario%20Admin";
 
+    
     private UsuarioService() {
     }
 
