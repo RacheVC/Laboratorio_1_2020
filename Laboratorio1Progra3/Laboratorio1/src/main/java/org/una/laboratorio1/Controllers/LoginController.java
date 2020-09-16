@@ -88,9 +88,9 @@ public class LoginController implements Initializable {
         }
         
         
-        System.out.println(UsuarioService.getInstance().finByNombre("Usuario Admin"));
-//        System.out.println(UsuarioService.getInstance().finByCedula("A"));  
-//        if(UsuarioService.getInstance().getAll().equals())
+//        System.out.println(UsuarioService.getInstance().finByNombre("Usuario Admin"));
+//      System.out.println(UsuarioService.getInstance().finByCedula("A")); 
+//      if(UsuarioService.getInstance().getAll().equals())
         
     }
     

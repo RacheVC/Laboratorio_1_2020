@@ -7,7 +7,9 @@ package org.una.laboratorio1.Controllers;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Date;
 import java.util.ResourceBundle;
+import java.util.concurrent.ExecutionException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,6 +21,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
+import org.una.laboratorio1.dto.DepartamentoDTO;
+import org.una.service.DepartamentoService;
 
 /**
  * FXML Controller class
@@ -53,8 +57,15 @@ public class DetalleInfoDepartamentoController implements Initializable {
     }
 
     @FXML
-    private void ActionBtnGuardar(ActionEvent event) {
+    private void ActionBtnGuardar(ActionEvent event) throws InterruptedException, ExecutionException, IOException {
+        DepartamentoDTO depadto = new DepartamentoDTO();
         
+        depadto.setEstado(true);
+        depadto.setFechaModificacion(new Date());
+        depadto.setFechaRegistro(new Date());
+        depadto.setNombre("Informatica");
+        
+        DepartamentoService.getInstance().add(depadto);
     }
     
 }
