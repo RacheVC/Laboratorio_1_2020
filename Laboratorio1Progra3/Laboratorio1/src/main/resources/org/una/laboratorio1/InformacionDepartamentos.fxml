@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionDepartamentosController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionDepartamentosController">
    <children>
-      <Label layoutX="60.0" layoutY="42.0" text="Información de departamentos">
+      <Label layoutX="60.0" layoutY="42.0" text="Información de departamentos" textFill="#f5efef">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>

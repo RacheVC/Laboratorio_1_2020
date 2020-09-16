@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionDiseñoTramitesController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionDiseñoTramitesController">
    <children>
-      <Label layoutX="70.0" layoutY="32.0" text="Diseño de tramites:">
+      <Label layoutX="70.0" layoutY="32.0" text="Diseño de tramites:" textFill="#f8f3f3">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>

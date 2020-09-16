@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionTiposTramitesController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.InformacionTiposTramitesController">
    <children>
-      <Label layoutX="63.0" layoutY="42.0" text="Tipos de tramites:">
+      <Label layoutX="63.0" layoutY="42.0" text="Tipos de tramites:" textFill="#fff9f9">
          <font>
             <Font name="Century Gothic" size="24.0" />
          </font>

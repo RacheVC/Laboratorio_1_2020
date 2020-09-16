@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.AdministracionUsuariosController">
    <children>
-      <Label layoutX="86.0" layoutY="42.0" text="Administración de usuarios">
+      <Label layoutX="88.0" layoutY="38.0" text="Administración de usuarios" textFill="WHITE">
          <font>
             <Font name="System Bold" size="29.0" />
          </font>

@@ -5,12 +5,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DashboardController">
+<AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="749.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DashboardController">
    <children>
-      <AnchorPane prefHeight="616.0" prefWidth="200.0" style="-fx-background-color: gray;">
+      <AnchorPane prefHeight="616.0" prefWidth="200.0" style="-fx-background-color: black;">
          <children>
             <Button layoutX="-2.0" mnemonicParsing="false" onAction="#OnActionCerrarSesion" prefHeight="77.0" prefWidth="202.0">
                <effect>
@@ -20,26 +22,35 @@
                   <Font name="System Bold" size="16.0" />
                </font>
             </Button>
-            <Accordion layoutX="-2.0" layoutY="77.0">
+            <Accordion layoutX="-2.0" layoutY="77.0" prefWidth="202.0">
               <panes>
-                <TitledPane animated="false" style="-fx-background-color: gray;" text="Administración">
+                <TitledPane animated="false" style="-fx-background-color: DARKCYAN;" text="Administración">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: gray;">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
                            <children>
                               <Button layoutX="-1.0" mnemonicParsing="false" onAction="#actionBtnPermisos" prefHeight="39.0" prefWidth="202.0" text="Permisos">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                               <Button layoutX="-2.0" layoutY="39.0" mnemonicParsing="false" onAction="#actionBtnUsuarios" prefHeight="39.0" prefWidth="202.0" text="Usuarios">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                               <Button layoutX="-2.0" layoutY="78.0" mnemonicParsing="false" onAction="#actionBtnParametros" prefHeight="39.0" prefWidth="202.0" text="Parametros">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                            </children>
                         </AnchorPane>
@@ -47,25 +58,37 @@
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
                 </TitledPane>
-                <TitledPane animated="false" prefWidth="202.0" text="Información">
+                <TitledPane animated="false" prefWidth="202.0" text="Información" textFill="#111010">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: gray;">
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: black;">
                            <children>
                               <Button layoutX="-1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#actionBtnDepartamentos" prefHeight="39.0" prefWidth="202.0" text="Departamentos">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                               <Button layoutX="-2.0" layoutY="38.0" mnemonicParsing="false" onAction="#actionBtnTiposTramites" prefHeight="39.0" prefWidth="202.0" text="Tipos de tramites">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                               <Button layoutX="-1.0" layoutY="77.0" mnemonicParsing="false" onAction="#actionbtnDisenoTramites" prefHeight="39.0" prefWidth="202.0" text="Diseño de tramites">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
+                                 <effect>
+                                    <InnerShadow />
+                                 </effect>
                               </Button>
                            </children>
                         </AnchorPane>
@@ -73,12 +96,64 @@
                      <font>
                         <Font name="Century Gothic" size="16.0" />
                      </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
                 </TitledPane>
               </panes>
             </Accordion>
             <Label fx:id="lblNombreUsuario" layoutX="27.0" layoutY="14.0" prefHeight="23.0" prefWidth="125.0" />
-            <Label layoutX="56.0" layoutY="50.0" text="CERRAR SESIÓN" />
+            <Label layoutX="56.0" layoutY="50.0" text="CERRAR SESIÓN">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ImageView fitHeight="213.0" fitWidth="142.0" layoutX="38.0" layoutY="398.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@iconos/People.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
+      <Label layoutX="267.0" layoutY="14.0" text="Bienvenido al sistema" textFill="#fffdfd">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="245.0" fitWidth="240.0" layoutX="345.0" layoutY="86.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/Circulo.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="388.0" layoutY="131.0" text="Trámites" textFill="#f2ecec">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="181.0" text="Municipales" textFill="#f2ecec">
+         <font>
+            <Font name="Century Gothic Bold" size="39.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="109.0" fitWidth="106.0" layoutX="257.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/Personas1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="106.0" layoutX="572.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/Personas2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="112.0" layoutX="415.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/folder.png" />
+         </image>
+      </ImageView>
    </children>
+   <effect>
+      <InnerShadow />
+   </effect>
 </AnchorPane>

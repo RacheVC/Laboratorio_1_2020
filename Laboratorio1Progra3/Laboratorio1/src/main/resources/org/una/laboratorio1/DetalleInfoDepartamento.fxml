@@ -6,27 +6,29 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoDepartamentoController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="Fondo2" stylesheets="@Style1.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.una.laboratorio1.Controllers.DetalleInfoDepartamentoController">
    <children>
-      <Label layoutX="45.0" layoutY="27.0" text="Información de departamentos:">
+      <Label layoutX="45.0" layoutY="27.0" text="Información de departamentos:" textFill="#fffbfb">
          <font>
             <Font name="Century Gothic" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="45.0" layoutY="81.0" text="Id:">
+      <Label layoutX="45.0" layoutY="81.0" text="Id:" textFill="#f8f5f5">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="45.0" layoutY="122.0" text="Nombre:">
+      <Label layoutX="45.0" layoutY="122.0" text="Nombre:" textFill="#fcfafa">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="44.0" layoutY="166.0" text="Estado:">
+      <Label layoutX="44.0" layoutY="166.0" text="Estado:" textFill="#f8f5f5">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -41,12 +43,12 @@
             <InnerShadow />
          </effect>
       </TextField>
-      <Label layoutX="41.0" layoutY="212.0" text="Creado el:">
+      <Label layoutX="41.0" layoutY="212.0" text="Creado el:" textFill="#f5f2f2">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="39.0" layoutY="257.0" text="Ultima modificación:">
+      <Label layoutX="39.0" layoutY="257.0" text="Ultima modificación:" textFill="#fcf8f8">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -61,7 +63,7 @@
             <InnerShadow />
          </effect>
       </DatePicker>
-      <Button layoutX="40.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnCancelar" text="Cancelar">
+      <Button layoutX="40.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnCancelar" prefHeight="26.0" prefWidth="126.0" text="Cancelar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -69,7 +71,7 @@
             <InnerShadow />
          </effect>
       </Button>
-      <Button layoutX="420.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnGuardar" text="Guardar">
+      <Button layoutX="409.0" layoutY="329.0" mnemonicParsing="false" onAction="#ActionBtnGuardar" prefHeight="26.0" prefWidth="120.0" text="Guardar">
          <font>
             <Font name="Century Gothic Bold" size="13.0" />
          </font>
@@ -77,6 +79,19 @@
             <InnerShadow />
          </effect>
       </Button>
-      <ComboBox fx:id="cbxEstado" layoutX="212.0" layoutY="166.0" prefHeight="25.0" prefWidth="285.0" />
+      <ComboBox fx:id="cbxEstado" layoutX="212.0" layoutY="166.0" prefHeight="25.0" prefWidth="285.0">
+         <effect>
+            <InnerShadow />
+         </effect></ComboBox>
+      <ImageView fitHeight="26.0" fitWidth="30.0" layoutX="140.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/Cancelar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="503.0" layoutY="329.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@iconos/Guardar.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
