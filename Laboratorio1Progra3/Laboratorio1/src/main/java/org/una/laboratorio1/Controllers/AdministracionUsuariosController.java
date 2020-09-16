@@ -32,6 +32,7 @@ public class AdministracionUsuariosController implements Initializable {
 
     /**
      * Initializes the controller class.
+     *
      * @param url
      * @param rb
      */
@@ -62,9 +63,9 @@ public class AdministracionUsuariosController implements Initializable {
 
     @FXML
     private void OnActionBuscar(ActionEvent event) {
-         UsuarioDTO cedula = new UsuarioDTO();
+        UsuarioDTO cedula = new UsuarioDTO();
         cedula.setCedula(txtBuscar.getText());
-         System.out.println(cedula);
+        System.out.println(cedula);
     }
-    
+
 }

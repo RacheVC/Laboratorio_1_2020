@@ -16,7 +16,10 @@ import org.una.laboratorio1.utils.ConnectionUtils;
  * @author rache
  */
 public class PermisoService {
-private final String urlstring = "http://localhost:8099/permisos/";
+    PermisoDTO permiso = new PermisoDTO();
+    private final String urlstring = "http://localhost:8099/permisos/";
+//    private final String urlstringCodigo = "http://localhost:8099/permisos/";
+
     private PermisoService() {
     }
 
@@ -24,35 +27,21 @@ private final String urlstring = "http://localhost:8099/permisos/";
         return ConnectionUtils.ListFromConnection(urlstring, PermisoDTO.class);
     }
 
-    public void add(UsuarioDTO object) throws InterruptedException, ExecutionException, IOException {
+    public void add(PermisoDTO object) throws InterruptedException, ExecutionException, IOException {
         ConnectionUtils.ObjectToConnection(urlstring, object);
     }
 
-    public List<UsuarioDTO> getUserById(Long id) throws IOException {
-        return ConnectionUtils.ListFromConnection(urlstring, UsuarioDTO.class);
+    public static PermisoService getInstance() {
+        return PermisoServiceHolder.INSTANCE;
     }
 
-    public List<UsuarioDTO> finByNombre(String Nombre) throws IOException {
-        return ConnectionUtils.ConnectionToObjectByField(urlstringNombre, Nombre);
+    private static class PermisoServiceHolder {
+
+        private static final PermisoService INSTANCE = new PermisoService();
     }
 
-    public void Login(AuthenticationRequest object) throws InterruptedException, ExecutionException, IOException {
-        ConnectionUtils.ObjectToConnectionLogin(urlstringLogin, object);
-
-    }
-
-    public static UsuarioService getInstance() {
-        return UsuarioServiceHolder.INSTANCE;
-    }
-
-    private static class UsuarioServiceHolder {
-
-        private static final UsuarioService INSTANCE = new UsuarioService();
-    }
-
-    public List<UsuarioDTO> finByCedula(String Cedula) throws IOException {
-        Cedula = datos.getCedula();
-        return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula, Cedula);
-    }
-
+//    public List<PermisoDTO> finByCodigo(String Codigo) throws IOException {
+            String codigo = permiso.getCodigo();
+//        return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula, codigo);
+//    }
 }

@@ -54,6 +54,7 @@ public class DetalleInfoDepartamentoController implements Initializable {
 
     @FXML
     private void ActionBtnGuardar(ActionEvent event) {
+        
     }
     
 }

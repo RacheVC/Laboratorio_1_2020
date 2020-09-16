@@ -18,6 +18,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
+import org.una.laboratorio1.dto.PermisoDTO;
 
 /**
  * FXML Controller class
@@ -31,9 +32,12 @@ public class AdministracionPermisosController implements Initializable {
 
     /**
      * Initializes the controller class.
+     * @param url
+     * @param rb
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         // TODO
     }    
 
@@ -48,6 +52,9 @@ public class AdministracionPermisosController implements Initializable {
 
     @FXML
     private void OnActionBuscarPermiso(ActionEvent event) {
+        PermisoDTO permiso = new PermisoDTO();
+        permiso.setCodigo(txtBuscar.getText());
+        System.out.println(permiso.getCodigo());
     }
     
 }
