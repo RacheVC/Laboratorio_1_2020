@@ -59,8 +59,8 @@ public class UsuarioService {
     }
 
     public List<UsuarioDTO> finByCedula(String Cedula) throws IOException {
-        Cedula = datos.getCedula();
-        String valueOf = String.valueOf(Cedula);
-        return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula,valueOf);
+        Cedula = String.valueOf(datos.getCedula());
+        return ConnectionUtils.ConnectionToObjectByCedula(urlstringCedula,Cedula);
     }
+    
 }

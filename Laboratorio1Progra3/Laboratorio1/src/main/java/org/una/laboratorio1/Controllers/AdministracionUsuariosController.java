@@ -19,6 +19,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import org.una.laboratorio1.App;
 import org.una.laboratorio1.dto.UsuarioDTO;
+import org.una.service.UsuarioService;
 
 /**
  * FXML Controller class
@@ -61,11 +62,27 @@ public class AdministracionUsuariosController implements Initializable {
         window.show();
     }
 
+//      private void CargarDatosTableMuseos() {
+//        this.JpaSala = new SalasJpaController();
+//        this.ListSala = JpaSala.getSalas();
+//        this.colNombre.setCellValueFactory(value -> new SimpleStringProperty(value.getValue().getNombre()));
+//        this.colDescripcion.setCellValueFactory(value -> new SimpleStringProperty(value.getValue().getDescripcion()));      
+//        this.TableSala.setItems(FXCollections.observableArrayList(this.ListSala));
+//    }
+//
+//    public void FiltrarInformacion(String nombre) {
+//        this.salaFiltrada = new Salas();
+//        this.CargarDatosTableMuseos();
+//        this.InfoSalaFiltrado = this.JpaSala.findSalasFilter(nombre);
+//        this.TableSala.setItems(FXCollections.observableArrayList(this.InfoSalaFiltrado));
+//   
+//
+//    }
     @FXML
-    private void OnActionBuscar(ActionEvent event) throws IOException {
+    private void Buscar(ActionEvent event) throws IOException {
         UsuarioDTO cedula = new UsuarioDTO();
-        cedula.setCedula(txtBuscar.getText());
-
+         cedula.setCedula(txtBuscar.getText());       
+        System.out.println(UsuarioService.getInstance().finByCedula(cedula.getCedula()));
     }
 
 }

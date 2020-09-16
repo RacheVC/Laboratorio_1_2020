@@ -47,7 +47,7 @@
                               <Font name="System Bold" size="13.0" />
                            </font>
                         </Button>
-                        <Button layoutX="553.0" layoutY="14.0" mnemonicParsing="false" onAction="#OnActionBuscar" text="Buscar" />
+                        <Button layoutX="553.0" layoutY="14.0" mnemonicParsing="false" onAction="#Buscar" text="Buscar" />
                      </children>
                   </AnchorPane>
                </content>
