@@ -51,10 +51,10 @@ public class AdministracionPermisosController implements Initializable {
     }
 
     @FXML
-    private void OnActionBuscarPermiso(ActionEvent event) {
+    private void OnActionBuscarPermiso(ActionEvent event) throws IOException {
         PermisoDTO permiso = new PermisoDTO();
         permiso.setCodigo(txtBuscar.getText());
-        System.out.println(permiso.getCodigo());
+       
     }
     
 }

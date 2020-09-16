@@ -32,7 +32,7 @@ public class ConnectionUtils {
         Type listtype = new TypeToken<ArrayList<T>>() {
         }.getType();
 
-        URL url = new URL(urlstring + Cedula);
+        URL url = new URL(urlstring);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("Accept", "application/json");
@@ -71,11 +71,11 @@ public class ConnectionUtils {
         Type listtype = new TypeToken<ArrayList<T>>() {
         }.getType();
 
-        URL url = new URL(urlstring + Nombre);
+        URL url = new URL(urlstring);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
         con.setRequestProperty("Accept", "application/json");
-   
+        
         try (BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream(), "utf-8"))) {
             StringBuilder response = new StringBuilder();
             String responseLine;

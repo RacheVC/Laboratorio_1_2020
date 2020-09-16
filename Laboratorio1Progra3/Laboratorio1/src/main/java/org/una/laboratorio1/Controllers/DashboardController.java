@@ -89,7 +89,7 @@ public class DashboardController implements Initializable {
 
     @FXML
     private void actionBtnUsuarios(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(App.class.getResource("AdministracionPermisos.fxml"));
+        Parent root = FXMLLoader.load(App.class.getResource("AdministracionUsuarios.fxml"));
         Scene creacionDocs = new Scene(root);
 
         Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
